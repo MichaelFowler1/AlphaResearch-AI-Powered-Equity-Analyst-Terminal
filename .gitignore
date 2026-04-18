@@ -1,0 +1,23 @@
+# --- Security & Secrets ---
+.env
+.streamlit/secrets.toml
+
+# --- Virtual Environments ---
+venv/
+env/
+.venv/
+
+# --- Local Databases & RAG Memory ---
+singularity_memory/
+*.sqlite3
+*.parquet
+
+# --- Python Cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
