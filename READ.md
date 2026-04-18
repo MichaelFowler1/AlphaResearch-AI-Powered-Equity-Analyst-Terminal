@@ -24,7 +24,7 @@ The application integrates real-time web scraping, live market pricing, and a lo
 
 ### 1. Clone the Repository
 Clone this repository to your local machine:
-    git clone https://github.com/yourusername/AlphaResearch.git
+    git clone https://github.com/MichaelFowler1/AlphaResearch.git
     cd AlphaResearch
 
 ### 2. Set Up the Virtual Environment
