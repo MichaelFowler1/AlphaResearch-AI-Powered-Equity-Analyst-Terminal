@@ -1,3 +1,4 @@
+<img width="1024" height="505" alt="d9d9c210-dcbe-4d78-802c-c964e4193381" src="https://github.com/user-attachments/assets/b021d31c-27a6-4ddd-a32d-7dc319d4374f" />
 AlphaResearch: AI-Powered Equity Analyst Terminal
 Overview
 AlphaResearch is a specialized, localized web terminal designed to automate fundamental equity research and portfolio allocation analysis. Built on a multi-agent architecture, the system coordinates specialized AI agents to scan global financial data, evaluate economic moats, and execute strict, rules-based fundamental analysis.
