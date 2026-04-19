@@ -29,6 +29,7 @@ It is highly recommended to run this application within an isolated virtual envi
 # macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
+
 3. Install Dependencies
 Install the required packages from the requirements file. pip install -r requirements.txt
 
