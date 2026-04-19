@@ -19,9 +19,11 @@ Data Ingestion: yfinance, duckduckgo-search, pypdf
 Text Processing: LangChain RecursiveCharacterTextSplitter
 Installation Guide
 1. Clone the Repository
-Clone this repository to your local machine: git clone https://github.com/MichaelFowler1/AlphaResearch-AI-Powered-Equity-Analyst-Terminal.git cd AlphaResearch-AI-Powered-Equity-Analyst-Terminal
+Clone this repository to your local machine: git clone https://github.com/MichaelFowler1/AlphaResearch-AI-Powered-Equity-Analyst-Terminal.git
 
-2. Set Up the Virtual Environment
+cd AlphaResearch-AI-Powered-Equity-Analyst-Terminal
+
+3. Set Up the Virtual Environment
 It is highly recommended to run this application within an isolated virtual environment. # Windows python -m venv venv venv\Scripts\activate
 
 # macOS/Linux
