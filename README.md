@@ -1,49 +1,77 @@
-<img width="1024" height="505" alt="d9d9c210-dcbe-4d78-802c-c964e4193381" src="https://github.com/user-attachments/assets/b021d31c-27a6-4ddd-a32d-7dc319d4374f" />
-AlphaResearch: AI-Powered Equity Analyst Terminal
-Overview
+<img width="1024" height="505" alt="AlphaResearch terminal screenshot" src="https://github.com/user-attachments/assets/b021d31c-27a6-4ddd-a32d-7dc319d4374f" />
+
+# AlphaResearch: AI-Powered Equity Analyst Terminal
+
+## Overview
 AlphaResearch is a specialized, localized web terminal designed to automate fundamental equity research and portfolio allocation analysis. Built on a multi-agent architecture, the system coordinates specialized AI agents to scan global financial data, evaluate economic moats, and execute strict, rules-based fundamental analysis.
 
 The application integrates real-time web scraping, live market pricing, and a localized Retrieval-Augmented Generation (RAG) knowledge base to process custom research documents without relying on external cloud storage for vector memory.
 
-Core Features
-Multi-Agent Orchestration: Utilizes CrewAI to delegate tasks between a "Fundamental Analyst" (data gathering) and a "Portfolio Manager" (allocation strategy).
-Local RAG Integration: Implements a persistent, locally hosted ChromaDB instance to ingest and vectorize PDF research reports.
-Live Market Intelligence: Integrates Yahoo Finance API for real-time asset pricing and DuckDuckGo search for current market narratives.
-Strict Constraints: Programmatically constrained to focus strictly on long-term spot equity analysis, explicitly ignoring margin and options trading.
-Persistent Memory: Maintains localized chat history and document context across sessions.
-Architecture & Tech Stack
-Frontend: Streamlit
-LLM Engine: Google Gemini 2.5 Flash
-Agent Framework: CrewAI
-Vector Database: ChromaDB (Local SQLite/Parquet)
-Data Ingestion: yfinance, duckduckgo-search, pypdf
-Text Processing: LangChain RecursiveCharacterTextSplitter
-Installation Guide
-1. Clone the Repository
-Clone this repository to your local machine: git clone https://github.com/MichaelFowler1/AlphaResearch-AI-Powered-Equity-Analyst-Terminal.git
+## Core Features
+* **Multi-Agent Orchestration:** Utilizes CrewAI to delegate tasks between a "Fundamental Analyst" (data gathering) and a "Portfolio Manager" (allocation strategy).
+* **Local RAG Integration:** Implements a persistent, locally hosted ChromaDB instance to ingest and vectorize PDF research reports.
+* **Live Market Intelligence:** Integrates Yahoo Finance API for real-time asset pricing and DuckDuckGo search for current market narratives.
+* **Strict Constraints:** Programmatically constrained to focus strictly on long-term spot equity analysis, explicitly ignoring margin and options trading.
+* **Persistent Memory:** Maintains localized chat history and document context across sessions.
 
+## Architecture & Tech Stack
+* **Frontend:** Streamlit
+* **LLM Engine:** Google Gemini 2.5 Flash
+* **Agent Framework:** CrewAI
+* **Vector Database:** ChromaDB (Local SQLite/Parquet)
+* **Data Ingestion:** yfinance, duckduckgo-search, pypdf
+* **Text Processing:** LangChain RecursiveCharacterTextSplitter
+
+## Installation Guide
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/MichaelFowler1/AlphaResearch-AI-Powered-Equity-Analyst-Terminal.git
 cd AlphaResearch-AI-Powered-Equity-Analyst-Terminal
+```
 
-2. Set Up the Virtual Environment
-It is highly recommended to run this application within an isolated virtual environment. # Windows python -m venv venv venv\Scripts\activate
+### 2. Set Up the Virtual Environment
+It is highly recommended to run this application within an isolated virtual environment.
+
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
 
 # macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
+```
 
-3. Install Dependencies
-Install the required packages from the requirements file. pip install -r requirements.txt
+### 3. Install Dependencies
 
-4. Configure Environment Variables
-Create a file named .env in the root directory of the project. Add your Google API key to this file: GOOGLE_API_KEY="your_api_key_here"
+```bash
+pip install -r requirements.txt
+```
 
-Usage Instructions
-To launch the application, ensure your virtual environment is active and run the following command from the root directory: streamlit run app.py
+### 4. Configure Environment Variables
+Create a file named `.env` in the root directory of the project and add your Google API key:
 
-The terminal will automatically open in your default web browser at http://localhost:8501.
+```
+GOOGLE_API_KEY="your_api_key_here"
+```
 
-Managing the Database
-The application writes vector data to a local directory named local_rag_storage. If you need to perform a hard reset of the system's memory, you can use the "Clear History & Knowledge Base" function within the application UI, or manually delete the folder while the server is stopped.
+## Usage Instructions
 
-Disclaimer
-This software is provided for educational and analytical purposes only. It is not financial advice. The outputs generated by the AI agents do not constitute professional investment recommendations. Always conduct independent due diligence before allocating capital.
+To launch the application, ensure your virtual environment is active and run the following command from the root directory:
+
+```bash
+streamlit run app.py
+```
+
+The terminal will automatically open in your default web browser at `http://localhost:8501`.
+
+### Managing the Database
+The application writes vector data to a local directory named `local_rag_storage`. If you need to perform a hard reset of the system's memory, use the "Clear History & Knowledge Base" function within the application UI, or manually delete the folder while the server is stopped.
+
+## Disclaimer
+This software is provided for educational and analytical purposes only. **It is not financial advice.** The outputs generated by the AI agents do not constitute professional investment recommendations. Always conduct independent due diligence before allocating capital.
+
+## License
+Licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
