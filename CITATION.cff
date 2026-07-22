@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "AlphaResearch-AI-Powered-Equity-Analyst-Terminal"
+abstract: "AlphaResearch is a specialized, localized web terminal designed to automate fundamental equity research and portfolio allocation analysis. Built on a multi-agent architecture, the system coordinates specialized AI agents to scan global financial data, evaluate economic moats, and execute strict, rules-based fundamental analysis."
+authors:
+  - family-names: "Fowler"
+    given-names: "Michael"
+    alias: "MichaelFowler1"
+repository-code: "https://github.com/MichaelFowler1/AlphaResearch-AI-Powered-Equity-Analyst-Terminal"
+url: "https://github.com/MichaelFowler1/AlphaResearch-AI-Powered-Equity-Analyst-Terminal"
+license: "Apache-2.0"
+date-released: "2026-04-18"
