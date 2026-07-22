@@ -9,6 +9,8 @@ env/
 
 # --- Local Databases & RAG Memory ---
 singularity_memory/
+ai_memory/
+local_rag_storage/
 *.sqlite3
 *.parquet
 
